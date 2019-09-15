@@ -1,17 +1,12 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-<<<<<<< HEAD
 from sklearn.cluster import KMeans
-=======
-from sklearn.classifier import KMeans
->>>>>>> ccbc43a16f9c2dd50967df910ba6ebfcbb323c0d
 
 df = pd.read_csv('xclara.csv')
 
 x1 = df['V1']
 x2 = df['V2']
 
-<<<<<<< HEAD
 range_cluster = range(1, 11)
 sse = []
 
@@ -38,7 +33,3 @@ model.fit(df)
 
 plt.scatter(x1, x2, c = model.labels_)
 plt.show()
-=======
-for i in range(10):
-    model = KMeans(n_cluster = )
->>>>>>> ccbc43a16f9c2dd50967df910ba6ebfcbb323c0d
